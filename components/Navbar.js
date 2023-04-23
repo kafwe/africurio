@@ -1,4 +1,5 @@
 import {
+  Center,
   Box,
   Flex,
   HStack,
@@ -11,7 +12,7 @@ import {
   Stack,
   Icon
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import NextLink from 'next/link';
 
@@ -23,7 +24,7 @@ const NavLink = ({ href, children }) => (
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      bg: useColorModeValue('orange.100', 'orange.600'),
     }}
     href={href}>
     {children}
@@ -31,14 +32,18 @@ const NavLink = ({ href, children }) => (
 );
 
 export default function withAction() {
-  const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={'white'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
+            variant={'ghost'}
+            _hover={{
+              textDecoration: 'none',
+              bg: 'orange.100',
+            }}
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
@@ -46,23 +51,28 @@ export default function withAction() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box  fontWeight={'bold'}>AfriCurio</Box>
-            <HStack
+            <Box fontWeight={'bold'} fontSize={'large'}>AfriCurio</Box>
+          </HStack>
+
+          <Center
               as={'nav'}
-              spacing={4}
+              spacing={8}
               display={{ base: 'none', md: 'flex' }}>
               <NavLink href={'#'}>Decor</NavLink>
               <NavLink href={'#'}>Clothing & Accessories</NavLink>
               <NavLink href={'#'}>Art & Collectibles</NavLink>
               <NavLink href={'#'}>Souvenirs & Gifts</NavLink>
 
-            </HStack>
-          </HStack>
+            </Center>
           <Flex alignItems={'center'}>
-            <Button onClick={toggleColorMode} mr={1}>
-                  {colorMode === 'light' ? <MoonIcon boxSize={5} /> : <SunIcon boxSize={5} />}
-            </Button>
-            <Button>
+
+            <Button
+                variant={'ghost'}
+               _hover={{
+                textDecoration: 'none',
+                bg: 'orange.100',
+              }}
+            >
 
               <Icon as={ShoppingBagIcon} boxSize={6} />
             </Button>
