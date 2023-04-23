@@ -56,12 +56,15 @@ export default function withAction() {
 
           <Center
               as={'nav'}
-              spacing={8}
+              spacing={12}
               display={{ base: 'none', md: 'flex' }}>
+              <NavLink href={'#'}>Shop All</NavLink>
               <NavLink href={'#'}>Decor</NavLink>
               <NavLink href={'#'}>Clothing & Accessories</NavLink>
               <NavLink href={'#'}>Art & Collectibles</NavLink>
               <NavLink href={'#'}>Souvenirs & Gifts</NavLink>
+              <NavLink href={'#'}>About</NavLink>
+              <NavLink href={'#'}>Contact us</NavLink>
 
             </Center>
           <Flex alignItems={'center'}>
@@ -83,10 +86,13 @@ export default function withAction() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
+              <NavLink href={'#'}>Shop All</NavLink>
               <NavLink href={'#'}>Decor</NavLink>
               <NavLink href={'#'}>Clothing & Accessories</NavLink>
               <NavLink href={'#'}>Art & Collectibles</NavLink>
               <NavLink href={'#'}>Souvenirs & Gifts</NavLink>
+              <NavLink href={'#'}>About</NavLink>
+              <NavLink href={'#'}>Contact us</NavLink>
             </Stack>
           </Box>
         ) : null}
