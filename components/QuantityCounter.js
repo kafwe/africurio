@@ -6,7 +6,7 @@ import {
   } from '@chakra-ui/react';
 
 
-export default function QuantityCounter({ defaultValue, size }) {
+export default function QuantityCounter({ defaultValue }) {
     const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
     useNumberInput({
       step: 1,

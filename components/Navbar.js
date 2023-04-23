@@ -24,7 +24,7 @@ const NavLink = ({ href, children }) => (
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('orange.100', 'orange.600'),
+      bg: 'yellow.300',
     }}
     href={href}>
     {children}
@@ -42,7 +42,7 @@ export default function withAction() {
             variant={'ghost'}
             _hover={{
               textDecoration: 'none',
-              bg: 'orange.100',
+              bg: 'yellow.300',
             }}
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -73,7 +73,7 @@ export default function withAction() {
                 variant={'ghost'}
                _hover={{
                 textDecoration: 'none',
-                bg: 'orange.100',
+                bg: 'yellow.300',
               }}
             >
 
