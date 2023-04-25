@@ -7,8 +7,6 @@ import {
   Link,
   Button,
   useDisclosure,
-  useColorModeValue,
-  useColorMode,
   Stack,
   Icon
 } from '@chakra-ui/react';
@@ -62,9 +60,8 @@ export default function withAction() {
               <NavLink href={'#'}>Decor</NavLink>
               <NavLink href={'#'}>Clothing & Accessories</NavLink>
               <NavLink href={'#'}>Art & Collectibles</NavLink>
-              <NavLink href={'#'}>Souvenirs & Gifts</NavLink>
-              <NavLink href={'#'}>About</NavLink>
-              <NavLink href={'#'}>Contact us</NavLink>
+              <NavLink href={'/about'}>About</NavLink>
+              <NavLink href={'/contact'}>Contact us</NavLink>
 
             </Center>
           <Flex alignItems={'center'}>
@@ -90,9 +87,8 @@ export default function withAction() {
               <NavLink href={'#'}>Decor</NavLink>
               <NavLink href={'#'}>Clothing & Accessories</NavLink>
               <NavLink href={'#'}>Art & Collectibles</NavLink>
-              <NavLink href={'#'}>Souvenirs & Gifts</NavLink>
-              <NavLink href={'#'}>About</NavLink>
-              <NavLink href={'#'}>Contact us</NavLink>
+              <NavLink href={'/about'}>About</NavLink>
+              <NavLink href={'/contact'}>Contact us</NavLink>
             </Stack>
           </Box>
         ) : null}

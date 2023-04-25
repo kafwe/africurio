@@ -14,10 +14,10 @@ export default function ProductDetail({ product }) {
                 <p className="leading-relaxed">{product.description}</p>
                 <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                     <div className="flex items-center">
-                        <span className="mr-3">Quantity</span>
+                        <span className="mr-3">Quantity</span>  
                         <div className="relative">
                             <div className='pl-3 pr-10'>
-                                <QuantityCounter defaultValue={1} size={'md'} />
+                                <QuantityCounter defaultValue={1} />
                             </div>
                            
                             
