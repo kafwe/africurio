@@ -29,7 +29,7 @@ const NavLink = ({ href, children }) => (
   </Link>
 );
 
-export default function withAction() {
+export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
