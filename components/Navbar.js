@@ -56,10 +56,10 @@ export default function withAction() {
               as={'nav'}
               spacing={12}
               display={{ base: 'none', md: 'flex' }}>
-              <NavLink href={'#'}>Shop All</NavLink>
-              <NavLink href={'#'}>Decor</NavLink>
-              <NavLink href={'#'}>Clothing & Accessories</NavLink>
-              <NavLink href={'#'}>Art & Collectibles</NavLink>
+              <NavLink href={'/all'}>Shop All</NavLink>
+              <NavLink href={'/decor'}>Decor</NavLink>
+              <NavLink href={'/clothing'}>Clothing & Accessories</NavLink>
+              <NavLink href={'/arts'}>Art & Collectibles</NavLink>
               <NavLink href={'/about'}>About</NavLink>
               <NavLink href={'/contact'}>Contact us</NavLink>
 
@@ -83,10 +83,10 @@ export default function withAction() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              <NavLink href={'#'}>Shop All</NavLink>
-              <NavLink href={'#'}>Decor</NavLink>
-              <NavLink href={'#'}>Clothing & Accessories</NavLink>
-              <NavLink href={'#'}>Art & Collectibles</NavLink>
+              <NavLink href={'/all'}>Shop All</NavLink>
+              <NavLink href={'/decor'}>Decor</NavLink>
+              <NavLink href={'/clothing'}>Clothing & Accessories</NavLink>
+              <NavLink href={'/arts'}>Art & Collectibles</NavLink>
               <NavLink href={'/about'}>About</NavLink>
               <NavLink href={'/contact'}>Contact us</NavLink>
             </Stack>

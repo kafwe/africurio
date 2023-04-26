@@ -60,7 +60,7 @@ const products = [
           "imageAlt": "African Tribal Wall Hanging"
         },
         {
-            "id": 8,
+            "id": "8",
             "name": "Rhino Statue",
             "description": "This beautiful malachite rhino statue is a true work of art. The rhino is carved in incredible detail.",
             "category": "decor",
@@ -70,7 +70,7 @@ const products = [
             "imageAlt": "Rhino Statue"
         },
         {
-            "id": 9,
+            "id": "9",
             "name": "Kente cloth scarf",
             "description": "This beautiful Kente cloth scarf is handwoven in Ghana and features a traditional Kente design. The scarf is made from high-quality cotton and can be worn as a fashionable accessory or used to keep you warm on chilly days. It also makes for a great gift for friends and family.",
             "category": "clothing",
@@ -80,7 +80,7 @@ const products = [
             "imageAlt": "Kente cloth scarf"
             },
             {
-              "id": 10,
+              "id": "10",
               "name": "Maasai beaded necklace",
               "description": "This stunning Maasai beaded necklace is handcrafted in Kenya and features a traditional Maasai design. The necklace is made from colorful beads and can be worn as a statement piece to add a pop of color to any outfit. It is also a great way to show support for the Maasai community.",
               "category": "clothing",
@@ -90,7 +90,7 @@ const products = [
               "imageAlt": "Maasai beaded necklace"
             },
             {
-              "id": 11,
+              "id": "11",
               "name": "African print headwrap",
               "description": "This beautiful African print headwrap is handcrafted in Nigeria and features a vibrant African print design. The headwrap can be worn in a variety of styles to suit your mood and outfit, and is made from high-quality cotton fabric that is gentle on your skin.",
               "category": "clothing",
@@ -100,7 +100,7 @@ const products = [
               "imageAlt": "African print headwrap"
             },
             {
-              "id": 12,
+              "id": "12",
               "name": "Beaded leather sandals",
               "description": "These stylish beaded leather sandals are handcrafted in Morocco and feature intricate beadwork on the straps. The sandals are made from high-quality leather and are both comfortable and durable, making them perfect for everyday wear. They also make for a great gift for friends and family.",
               "category": "clothing",
@@ -110,7 +110,7 @@ const products = [
               "imageAlt": "Beaded leather sandals"
             },
             {
-              "id": 13,
+              "id": "13",
               "name": "Kente cloth bow tie",
               "description": "This stylish Kente cloth bow tie is handwoven in Ghana and features a traditional Kente design. The bow tie is made from high-quality cotton and is perfect for adding a touch of African culture to any formal outfit. It also makes for a great gift for the stylish men in your life.",
               "category": "clothing",
@@ -120,7 +120,7 @@ const products = [
               "imageAlt": "Kente cloth bow tie"
             },
             {
-              "id": 14,
+              "id": "14",
               "name": "Zulu shield",
               "description": "This authentic Zulu shield is made from cowhide and wood and decorated with traditional patterns. It is a symbol of the Zulu warriors and their bravery in battle. The shield can be used as a wall decoration or a cultural souvenir.",
               "category": "arts",
@@ -130,7 +130,7 @@ const products = [
               "imageAlt": "Zulu shield"
             },
             {
-              "id": 15,
+              "id": "15",
               "name": "Shona stone sculpture",
               "description": "This beautiful Shona stone sculpture is carved from serpentine stone by skilled artisans in Zimbabwe. It depicts a mother and child in a loving embrace and represents the bond between family. The sculpture is a unique piece of art that can enhance any space.",
               "category": "arts",
@@ -140,7 +140,7 @@ const products = [
               "imageAlt": "Shona stone sculpture"
             },
             {
-              "id": 16,
+              "id": "16",
               "name": "Tinga Tinga painting",
               "description": "This colorful Tinga Tinga painting is inspired by the wildlife and nature of Tanzania. It is painted with enamel paint on canvas and features a vibrant scene of animals and plants. The painting is a perfect example of the Tinga Tinga style, which originated from the artist Edward Saidi Tingatinga.",
               "category": "arts",
@@ -150,7 +150,7 @@ const products = [
               "imageAlt": "Tinga Tinga painting"
             },
             {
-              "id": 17,
+              "id": "17",
               "name": "Bogolanfini mud cloth",
               "description": "This stunning Bogolanfini mud cloth is handwoven and dyed with natural materials by the Bamana people of Mali. It features geometric patterns and symbols that have cultural and spiritual meanings. The cloth can be used as a wall hanging, a tablecloth, or a throw.",
               "category": "arts",
@@ -160,7 +160,7 @@ const products = [
               "imageAlt": "Bogolanfini mud cloth"
             },
             {
-              "id": 18,
+              "id": "18",
               "name": "Ndebele doll",
               "description": "This charming Ndebele doll is handmade by the Ndebele women of South Africa. It is dressed in colorful beads and fabric that reflect the Ndebele culture and identity. The doll can be used as a toy, a decoration, or a gift.",
               "category": "arts",
@@ -170,7 +170,7 @@ const products = [
               "imageAlt": "Ndebele doll"
           },
           {
-              "id": 19,
+              "id": "19",
               "name": "Kuba cloth pillow cover",
               "description": "This elegant Kuba cloth pillow cover is made from raffia fiber that is dyed and embroidered by the Kuba people of Congo. It features intricate patterns and textures that showcase the Kuba artistry and craftsmanship. The pillow cover can add a touch of sophistication and comfort to any sofa or bed.",
               "category": "arts",

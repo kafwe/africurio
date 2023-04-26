@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function ProductCard({ product }) {
   return (
-    <Link  href={product.href} className="group">
+    <Link  href={`/detail/${product.id}`} className="group">
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
         <img
           src={product.imageSrc}
