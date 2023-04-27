@@ -13,6 +13,7 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import NextLink from 'next/link';
+import { useRouter } from 'next/router'
 
 
 const NavLink = ({ href, children }) => (
@@ -31,6 +32,7 @@ const NavLink = ({ href, children }) => (
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter()
 
   return (
     <>
@@ -72,6 +74,7 @@ export default function Navbar() {
                 textDecoration: 'none',
                 bg: 'yellow.300',
               }}
+              onClick={() => router.push('/cart')}
             >
 
               <Icon as={ShoppingBagIcon} boxSize={6} />

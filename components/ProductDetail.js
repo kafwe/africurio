@@ -4,6 +4,7 @@ import {
     HStack,
     Input
 } from '@chakra-ui/react';
+import { useState } from 'react'
 
 
 
@@ -18,7 +19,7 @@ export default function ProductDetail({ product }) {
     const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
     useNumberInput({
       step: 1,
-      defaultValue: defaultValue || 1,
+      defaultValue: 1,
       min: 1
     })
 
