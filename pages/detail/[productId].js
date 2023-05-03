@@ -16,8 +16,6 @@ export default function ProductDetailPage() {
     }, [router.isReady]);
 
 
-    
-
     const product = products.find(product => product.id === id)
 
     if (!product && router.isReady) {
