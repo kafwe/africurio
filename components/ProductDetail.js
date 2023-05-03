@@ -9,12 +9,12 @@ import { useState } from 'react'
 
 
 export default function ProductDetail({ product }) {
-    const [quantity, setQuantity] = useState(0)
+    const [quantity, setQuantity] = useState(1)
     const handleChange = (value) => setQuantity(value)
 
     const handleClick = () => {
         const cartItem = { ...product, quantity }
-        localStorage.setItem(product.id, cartItem)
+        localStorage.setItem(product.id, JSON.stringify(cartItem))
     }
     const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
     useNumberInput({
@@ -32,7 +32,7 @@ export default function ProductDetail({ product }) {
         <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
-            <img className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={`/${product.imageSrc}`}/>
+            <img className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" alt={product.imageAlt} src={`/${product.imageSrc}`}/>
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h2 className="text-sm title-font text-gray-500 tracking-widest">{product.categoryName.toUpperCase()}</h2>
                 <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{product.name}</h1>

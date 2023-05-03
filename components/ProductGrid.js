@@ -1,6 +1,6 @@
 import ProductCard from './ProductCard';
 import products from '../data/products';
-import { Heading } from '@chakra-ui/react';;
+import { Heading } from '@chakra-ui/react';
 
 export default function ProductGrid({ category }) {
     const filteredProducts = category ? 
